@@ -1,0 +1,82 @@
+#include <iostream>
+#include <math.h>
+#include <algorithm>
+
+class Lost_Cow_Move
+{
+public:
+  Lost_Cow_Move(double, double); //starting direction and unit_length
+  void next_point();
+  void set_line_theta(double); //set line_coef & origin point
+  void set_starting_point(double,double);
+  double get_wp_x();
+  double get_wp_y();
+
+private:
+  double wp_x,wp_y;//waypoint x & y
+  double op_x,op_y;//origin point x & y
+  double dir;
+  double unit_length;
+  double current_dist; //current dist taht needs to travel
+  double line_theta;
+  int step_2_power;
+};
+
+Lost_Cow_Move::Lost_Cow_Move(double ndir, double nunit_length)
+{
+  dir=ndir;
+  unit_length=nunit_length;
+
+  wp_x=0;
+  wp_y=0;
+  op_x=0;
+  op_y=0;
+  current_dist=unit_length;
+  line_theta=0;
+  step_2_power=1;
+}
+
+double Lost_Cow_Move::get_wp_x()
+{
+  return wp_x;
+}
+
+double Lost_Cow_Move::get_wp_y()
+{
+  return wp_y;
+}
+
+void Lost_Cow_Move::set_line_theta(double nlc)
+{
+  line_theta=nlc;
+}
+
+void Lost_Cow_Move::set_starting_point(double nx, double ny)
+{
+  op_x=nx;
+  op_y=ny;
+}
+
+void Lost_Cow_Move::next_point()
+{
+  if (op_x==0 && op_y==0 && line_theta==0)
+    {
+      std::cout<<"no inital position"<<std::endl;
+    }
+
+  if (dir==1)
+    {
+      wp_x = op_x+current_dist*cos(line_theta);//line_theta -90 to 90
+      wp_y = op_y+current_dist*sin(line_theta);
+    }
+  else
+    {
+      wp_x = op_x - current_dist*cos(line_theta);
+      wp_y = op_y - current_dist*sin(line_theta);
+      
+    }
+  
+  step_2_power=step_2_power*2;
+  current_dist=unit_length*step_2_power;
+  dir=dir*(-1);
+}

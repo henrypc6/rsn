@@ -1,0 +1,44 @@
+cmake_minimum_required(VERSION 2.4.6)
+include($ENV{ROS_ROOT}/core/rosbuild/rosbuild.cmake)
+
+find_package(Eigen REQUIRED)
+include_directories(${Eigen_INCLUDE_DIRS})
+
+find_package(OpenCV)
+include_directories(${OpenCV_INCLUDE_DIRS})
+
+# Set the build type.  Options are:
+#  Coverage       : w/ debug symbols, w/o optimization, w/ code-coverage
+#  Debug          : w/ debug symbols, w/o optimization
+#  Release        : w/o debug symbols, w/ optimization
+#  RelWithDebInfo : w/ debug symbols, w/ optimization
+#  MinSizeRel     : w/o debug symbols, w/ optimization, stripped binaries
+#set(ROS_BUILD_TYPE RelWithDebInfo)
+
+rosbuild_init()
+
+#set the default path for built executables to the "bin" directory
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
+#set the default path for built libraries to the "lib" directory
+set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
+
+#uncomment if you have defined messages
+#rosbuild_genmsg()
+#uncomment if you have defined services
+#rosbuild_gensrv()
+
+#common commands for building c++ executables and libraries
+#rosbuild_add_library(${PROJECT_NAME} src/example.cpp)
+#target_link_libraries(${PROJECT_NAME} another_library)
+#rosbuild_add_boost_directories()
+#rosbuild_link_boost(${PROJECT_NAME} thread)
+rosbuild_add_executable(im_rectify src/im_rectify.cpp)
+target_link_libraries(im_rectify ${OpenCV_LIBRARIES})
+rosbuild_add_executable(template_test src/template_test.cpp)
+target_link_libraries(template_test ${OpenCV_LIBRARIES})
+rosbuild_add_executable(Match_Graph src/Match_Graph.cpp)
+target_link_libraries(Match_Graph ${OpenCV_LIBRARIES})
+rosbuild_add_executable(goodfeature src/goodfeature.cpp)
+target_link_libraries(goodfeature ${OpenCV_LIBRARIES})
+rosbuild_add_executable(stereo_sgbm src/stereo_sgbm.cpp)
+target_link_libraries(stereo_sgbm ${OpenCV_LIBRARIES})

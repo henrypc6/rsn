@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/parallels/ros_ws/sandbox/arma/build/devel/setup.sh

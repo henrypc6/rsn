@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# img1 img2 [x1,y1] [x2,y2]
+./bin/template_test src/left2.jpg src/right2.jpg 100 100 130 130

@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+#This file will allow parameters of the data to be changed to the input file
+
+port='/dev/ttyUSB0'
+
+Range=30             #Range can be 5,10,20,30,40,50
+Gain=0              #Gain can be 0 to 40 dB with 1dB increments
+Absorption=20       #Absorption is 0.2 dB/m in water for 675kHz echo
+Pulse_length=100    #Pulse_Length 1-255 miu seconds with 1 miu seconds increment
+ProfileMinRange=0   #ProfileMinRange 0-25: ProfileMinRange*10=min range in meters
+DataPoints=1        #DataPoints 0 for IMX with 252 data points and 1 for IGX with 500 data points 
+SwitchDelay=0       #SwitchDelay 0 - 255 with 2 msec increments DO NOT USE VALUE 253
+
+publish_Hz=1
+queue_size=10
+
+#executing the publisher
+./bin/echo_pub $Range $Gain $Absorption $Pulse_length $ProfileMinRange $DataPoints $SwitchDelay $publish_Hz $queue_size $port &
+
+#set the file directory for echo return data
+file='/home/parallels/Desktop/Parallels_Shared_Folders/echo_sounder/data/7-29-14-srf10.txt'
+min_view_dist=0
+min_sig_strength=0
+
+#executing the listener
+./bin/echo_lis $min_view_dist $min_sig_strength 
+
+#executing the line detector
+#./bin/echo_line

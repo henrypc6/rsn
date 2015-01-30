@@ -1,0 +1,8 @@
+# Definitions for objects that can be used
+# as obstacles
+
+define box model
+(
+  size [0.4 0.2 1] 
+  color "red"
+)

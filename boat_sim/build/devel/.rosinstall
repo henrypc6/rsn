@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/parallels/ros_ws/sandbox/boat_sim/build/devel/setup.sh

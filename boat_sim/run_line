@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+#run the stage_ros package for sim environment
+rosrun stage_ros stageros worlds/obstacle_line.world &
+
+#run the moveit_full program
+./bin/moveit_line

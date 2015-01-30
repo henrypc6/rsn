@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#input img1 img2 extrinsics intrinsics max_disparity(>30) window_delta Equation_Number(0-5)
+./bin/im_rectify src/left2.jpg src/right2.jpg src/extrinsics.yml src/intrinsics.yml 50 1 1

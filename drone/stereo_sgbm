@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#input img1 img2 extrinsics intrinsics 
+./bin/stereo_sgbm src/left2.jpg src/right2.jpg src/extrinsics.yml src/intrinsics.yml

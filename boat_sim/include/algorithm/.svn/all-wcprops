@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/rsn-svn/!svn/ver/2894/code/umn-ros-pkg/rsn/carpMonitoring/obstacle_avoid/boat_obstacle_avoidance/include/algorithm
+END
+test
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/rsn-svn/!svn/ver/2888/code/umn-ros-pkg/rsn/carpMonitoring/obstacle_avoid/boat_obstacle_avoidance/include/algorithm/test
+END
+line_detect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/rsn-svn/!svn/ver/2890/code/umn-ros-pkg/rsn/carpMonitoring/obstacle_avoid/boat_obstacle_avoidance/include/algorithm/line_detect.cpp
+END
+lost_cow_move.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/rsn-svn/!svn/ver/2894/code/umn-ros-pkg/rsn/carpMonitoring/obstacle_avoid/boat_obstacle_avoidance/include/algorithm/lost_cow_move.cpp
+END
+._gnuplot_i.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/rsn-svn/!svn/ver/2888/code/umn-ros-pkg/rsn/carpMonitoring/obstacle_avoid/boat_obstacle_avoidance/include/algorithm/._gnuplot_i.hpp
+END
+gnuplot_i.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/rsn-svn/!svn/ver/2888/code/umn-ros-pkg/rsn/carpMonitoring/obstacle_avoid/boat_obstacle_avoidance/include/algorithm/gnuplot_i.hpp
+END
+._echo_data_filter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/rsn-svn/!svn/ver/2888/code/umn-ros-pkg/rsn/carpMonitoring/obstacle_avoid/boat_obstacle_avoidance/include/algorithm/._echo_data_filter.cpp
+END
+._test
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/rsn-svn/!svn/ver/2888/code/umn-ros-pkg/rsn/carpMonitoring/obstacle_avoid/boat_obstacle_avoidance/include/algorithm/._test
+END
+._line_detect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/rsn-svn/!svn/ver/2888/code/umn-ros-pkg/rsn/carpMonitoring/obstacle_avoid/boat_obstacle_avoidance/include/algorithm/._line_detect.cpp
+END
+echo_data_filter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/rsn-svn/!svn/ver/2888/code/umn-ros-pkg/rsn/carpMonitoring/obstacle_avoid/boat_obstacle_avoidance/include/algorithm/echo_data_filter.cpp
+END

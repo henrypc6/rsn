@@ -1,0 +1,16 @@
+<package>
+  <description brief="echo">
+
+     echo
+
+  </description>
+  <author>Cheng Peng</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <depend package= "roscpp"/>
+
+  <url>http://ros.org/wiki/echo</url>
+
+</package>
+
+

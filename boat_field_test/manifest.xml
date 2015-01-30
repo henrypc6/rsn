@@ -1,0 +1,16 @@
+<package>
+  <description brief="boat_field_test">
+
+     boat_field_test
+
+  </description>
+  <author>Cheng Peng</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/boat_field_test</url>
+  <depend package="roscpp"/>
+  <depend package="std_msgs"/>
+
+</package>
+
+

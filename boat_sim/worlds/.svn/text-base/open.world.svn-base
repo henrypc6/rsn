@@ -1,0 +1,30 @@
+# simple.world - basic world file example
+# Authors: Richard Vaughan
+# $Id$
+
+include "pioneer.inc"     # defines Pioneer-like robots
+include "map.inc"         # defines 'floorplan' object used for obstacle maps
+include "sick.inc"        # defines sick laser
+
+# smaller sim/real => slower simulations
+interval_sim 200  # simulation timestep in milliseconds
+interval_real 100  # real-time interval between simulation updates in milliseconds 
+
+paused 0
+
+# configure the GUI window
+window
+(
+  size [ 700.000 700.000 ] # in pixels
+  scale 37                 # pixels per meter
+  show_data 1              # 1=on 0=off
+)
+
+pioneer2dx_base_no_sonar
+(		  
+  # can refer to the robot by this name
+  name "r0"
+
+  pose [ 0 0 0 0 ] 
+  sicklaser( pose [ 0 0 0 0 ] ) 
+)

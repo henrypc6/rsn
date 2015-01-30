@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+rosrun stage_ros stageros worlds/obstacle_mod.world

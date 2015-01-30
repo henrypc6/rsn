@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/rsn-svn/!svn/ver/3180/code/umn-ros-pkg/rsn/drone/src
+END
+right1.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/rsn-svn/!svn/ver/3040/code/umn-ros-pkg/rsn/drone/src/right1.jpg
+END
+right2.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/rsn-svn/!svn/ver/3180/code/umn-ros-pkg/rsn/drone/src/right2.jpg
+END
+right3.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/rsn-svn/!svn/ver/3180/code/umn-ros-pkg/rsn/drone/src/right3.jpg
+END
+right4.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/rsn-svn/!svn/ver/3180/code/umn-ros-pkg/rsn/drone/src/right4.jpg
+END
+left2.jpg50_0.5_1.png
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/rsn-svn/!svn/ver/3180/code/umn-ros-pkg/rsn/drone/src/left2.jpg50_0.5_1.png
+END
+intrinsics.yml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/rsn-svn/!svn/ver/3040/code/umn-ros-pkg/rsn/drone/src/intrinsics.yml
+END
+left3.jpg50_0.5_1.png
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/rsn-svn/!svn/ver/3180/code/umn-ros-pkg/rsn/drone/src/left3.jpg50_0.5_1.png
+END
+stereo_sgbm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/rsn-svn/!svn/ver/3180/code/umn-ros-pkg/rsn/drone/src/stereo_sgbm.cpp
+END
+left1.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/rsn-svn/!svn/ver/3040/code/umn-ros-pkg/rsn/drone/src/left1.jpg
+END
+left2.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/rsn-svn/!svn/ver/3180/code/umn-ros-pkg/rsn/drone/src/left2.jpg
+END
+extrinsics.yml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/rsn-svn/!svn/ver/3040/code/umn-ros-pkg/rsn/drone/src/extrinsics.yml
+END
+template_test.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/rsn-svn/!svn/ver/3180/code/umn-ros-pkg/rsn/drone/src/template_test.cpp
+END
+left3.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/rsn-svn/!svn/ver/3180/code/umn-ros-pkg/rsn/drone/src/left3.jpg
+END
+left4.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/rsn-svn/!svn/ver/3180/code/umn-ros-pkg/rsn/drone/src/left4.jpg
+END
+Match_Graph.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/rsn-svn/!svn/ver/3285/code/umn-ros-pkg/rsn/drone/src/Match_Graph.cpp
+END
+im_rectify.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/rsn-svn/!svn/ver/3178/code/umn-ros-pkg/rsn/drone/src/im_rectify.cpp
+END

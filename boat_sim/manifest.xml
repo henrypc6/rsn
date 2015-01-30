@@ -1,0 +1,15 @@
+<package>
+  <description brief="boat_sim">
+
+     boat_sim
+
+  </description>
+  <author>Cheng Peng</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/boat_sim</url>
+  <depend package="roscpp"/>
+
+</package>
+
+

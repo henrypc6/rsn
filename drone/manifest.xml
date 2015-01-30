@@ -1,0 +1,15 @@
+<package>
+  <description brief="drone">
+
+     drone
+
+  </description>
+  <author>Cheng Peng</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/drone</url>
+  <depend package="roscpp"/>
+
+</package>
+
+

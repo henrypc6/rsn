@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/parallels/ros_ws/sandbox/boat_field_test/build/devel/setup.sh
