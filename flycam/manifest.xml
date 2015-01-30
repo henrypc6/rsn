@@ -1,0 +1,15 @@
+<package>
+  <description brief="flycam">
+
+     flycam
+
+  </description>
+  <author>Cheng Peng</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/flycam</url>
+  <depend package="roscpp"/>
+
+</package>
+
+
