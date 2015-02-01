@@ -487,8 +487,8 @@ int col=img1.cols;
 
   frameclone1.convertTo(frameclone1, CV_8U);
   frameclone2.convertTo(frameclone2, CV_8U);
-  imshow("apple1", frameclone1);
-  imshow("apple2", frameclone2);
+  // imshow("apple1", frameclone1);
+  // imshow("apple2", frameclone2);
   
   
   // Mat frameclone1=frameclone1.clone();
@@ -759,8 +759,52 @@ void Stereo_match(Mat& left_img, Mat& right_img, int max_d, int delta, int Match
   stereo_wbc1(img1,img2,delta,max_d, Match_template ,disparity);
   t = getTickCount()-t;
   printf("Time elapsed: %fms\n", t*1000/getTickFrequency());
-  disparity.convertTo(disp8, CV_8U);
-  imshow("disparity",disp8);
+  
+  Mat disp_f, disp_f8,disp_lap,disp_sob,disp_bin,disp_mean8;
+  int k_size=21;
+  Size filter_size(k_size,k_size);
+  vector< vector<Point> > contours; 
+  int apples=0;
+  Point2f center;
+  float radius;
+
+  disparity.convertTo(disp_mean8,CV_8U);
+  
+  threshold(disp_mean8,disp_bin,0,1,THRESH_BINARY);
+  Scalar m = mean(disp_mean8,disp_bin);
+    
+  boxFilter(disparity,disp_f,-1,filter_size);
+  
+  Laplacian(disp_f,disp_lap,-1,k_size);
+
+  disp_lap.convertTo(disp_f8,CV_8U);
+
+  findContours(disp_f8,contours,CV_RETR_EXTERNAL,CV_CHAIN_APPROX_SIMPLE);
+  
+  Scalar color = Scalar(0,255,0,255);
+  
+  for(int i=0; i<contours.size(); i++)
+    {
+      
+      Mat contourMat = Mat (contours[i]);
+      const double per = arcLength( contourMat, true);
+      
+      if (per>m[0]*5 && per<m[0]*10)
+	{
+	  minEnclosingCircle(contourMat,center,radius);
+	  radius=radius*0.5; // because of the k_size = 21 maded it larger, the radius needs to be decreased to fit
+	  circle(img2,center,radius,color);
+	  
+	  apples++;
+	}
+    }
+  imshow("left",img1);
+  imshow("right",img2);
+  
+  //disparity.convertTo(disp8, CV_8U);
+  //imshow("box filted",disp_f);
+  //imshow("lap of box filter",disp_lap);
+  cout<<"we have "<<apples<< " apples"<<endl;
   //return disparity;
   
 }
